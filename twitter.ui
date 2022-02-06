@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,50);
+font: 14pt &quot;Bauhaus 93&quot;;
+border-radius:15px;
+border-bottom:4px bold rgba(66,66,66,255);
+color:rgba(255,255,255,210);
+padding-bottom:7px;
+text-size:20px;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your keyword</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>160</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,50);
+font: 14pt &quot;Bauhaus 93&quot;;
+border-radius:15px;
+border-bottom:4px bold rgba(66,66,66,255);
+color:rgba(255,255,255,210);
+padding-bottom:7px;
+text-size:20px;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter the number of tweets</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 13pt &quot;Bauhaus 93&quot;;
+border-color: rgb(0, 222, 163);
+border-color: rgb(170, 170, 255);
+background-color: rgb(52, 3, 108);
+border-radius:20px;
+QPushButton:#pushButton(
+     background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.5, fx:0.5,        fy:0.5, stop:0 rgba(0, 179, 137, 255), stop:1 rgba(255, 255, 255, 255));
+     color: rgba(255, 255, 255,210);
+);
+QPushButton:#pushButton:hover(
+     background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.5, fx:0.5,        fy:0.5, stop:0 rgba(20, 199, 157, 255), stop:1 rgba(255, 255, 255, 255));
+);
+QPushButton:#pushButton:pressed(
+   padding-left:5px;
+   padding-top:5px;
+   background-color: rgba(105, 118, 132, 200);
+);</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>-30</y>
+      <width>561</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/twitter-g6a6077cac_1920.jpg);</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>textEdit_2</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>507</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
